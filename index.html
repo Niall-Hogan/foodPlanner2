@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+
+<head>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+
+</head>
+
+<body onload="displayAllRec()">
+
+    <div class="container">
+
+
+        <div class="leftBar">
+
+            <div class="searchBar">
+
+                <h4 class ="lTitle"> Search Recipes</h4>
+
+                <input type="text" id="search">
+
+                <button id="searchBtn" onclick="searchRec()">Search</button>
+            </div>
+
+            <div class="divider">
+
+                <h4 class="lTitle " id= "allRecTitle"> All Recipes</h4>
+
+                <textarea id="allRecs"></textarea>
+
+            </div>
+
+            <div class="divider">
+                <h4 class="lTitle"> Add New Recipie</h4>
+
+                <label id="formLbl1">Name</label>
+                <input type="text" id="newRecName">
+
+                <label id="formLbl2">Ingredients</label>
+                <input type="text" id="newRecIngs">
+
+                <button id="allBtns" onclick="addRec()">Add New Recipie</button>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="mainBar">
+
+            <div class="title">
+                <h3 class="lTitle" id = "rTitle"><br />Search a recipe to begin!</h3> <h3 class="lTitle" id = "typeTitle"></h3>
+
+
+                <br />
+
+                <ul class="ingss" id="ing">
+                </ul>
+                <p id="howToCook"></p>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="displayIngredients">
+
+        </div>
+
+
+<div class = "rightBar"> 
+
+    <div class="divider" id = "shoppingList">
+
+        <h4 class="lTitle " id= "allRecTitle">Shopping List</h4>
+
+        <textarea id="shopListBox"></textarea>
+        <button id = "addIngToList" onclick ="addShopping()">Add to shopping list</button>
+
+    </div>
+
+    <div class="divider">
+
+        <h4 class="lTitle " id= "allRecTitle">Meals</h4>
+
+        <textarea id="Meals"></textarea>
+
+    </div>
+</div>
+
+    </div>
+
+
+
+
+</body>
+</html>

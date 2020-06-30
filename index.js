@@ -66,6 +66,35 @@ function printRec(x) {
 }
 
 
+function GetSelectedText () {
+
+    
+    var selText = "";
+    if (window.getSelection) {  // all browsers, except IE before version 9
+        if (document.activeElement && (document.activeElement.tagName.toLowerCase () == "textarea" || document.activeElement.tagName.toLowerCase () == "input")) 
+        {
+            var text = document.activeElement.value;
+            selText = text.substring (document.activeElement.selectionStart, document.activeElement.selectionEnd);
+        }
+        else {
+            var selRange = window.getSelection ();
+            selText = selRange.toString ();
+        }
+    }
+    else {
+        if (document.selection.createRange) {       // Internet Explorer
+            var range = document.selection.createRange ();
+            selText = range.text;
+        }
+    }
+    if (selText !== "") {
+        
+        document.getElementById("search").value = selText;
+
+       
+    }
+}
+
 //loops through list of recipies
 function searchRec() {
 
@@ -134,6 +163,8 @@ function addShopping()
     
 }
 
+
+// removes ingredient already owned from shopping list
 function ownedIngredient()
 {
 

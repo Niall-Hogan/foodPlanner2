@@ -134,6 +134,26 @@ function addShopping()
     
 }
 
+function ownedIngredient()
+{
+
+    var ing = document.getElementById("ownedIng").value;
+
+    console.log(ing);
+
+    for (i = 0; i < shoppingList.length;i++)
+    {
+        if (ing == shoppingList[i])
+        {
+            console.log("FOUND!")
+            shoppingList.splice(i,1);
+        }
+    }
+    printLists();
+
+
+}
+
 // checks for duplicate items in shopping and meal lists
 function checkDuplicate(x)
 {

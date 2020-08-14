@@ -20,8 +20,8 @@ class Recipie {
 // Object creation - passed name and ingredients
 let spagBol = new Recipie("Spaghetti Bolognaise", ["Pasta", "Chopped Tomatoes", "Mince","Onion","Garlic"],"<i id = typeTitle>Dinner</i>" ,["1. Fry chopped tomatoes, onion and garlic with mince \n 2. Boil Pasta \n 3. Add cheese"]);
 let roastDinner = new Recipie("Roast Dinner", ["Sausage", "Gravy", "Potatoes", "Yorshire Pudidngs", "Frozen Veg"],"<i id = typeTitle>Dinner</i>",);
-let baconEgg = new Recipie("Bacon and Egg ",["Bacon","Eggs","Bread"],"<i id = typeTitle>Breakfast</i>");
-let baconBrie = new Recipie("Bacon and Brie ",["Bacon", "Brie", "Eggs"],"<i id = typeTitle>Lunch</i>");
+let baconEgg = new Recipie("Bacon and Egg",["Bacon","Eggs","Bread"],"<i id = typeTitle>Breakfast</i>");
+let baconBrie = new Recipie("Bacon and Brie",["Bacon", "Brie", "Eggs"],"<i id = typeTitle>Lunch</i>");
 let burrito = new Recipie("Burrito",["Wraps","Rice","Mince","Cheese","Lettuce","Jalapenos","Nachos"],"<i id = typeTitle>Dinner</i>")
 let eggsAvo = new Recipie("Eggs Avocado Toast",["Eggs","Avocado","Bread"],"<i id = typeTitle>Breakfast</i>"); 
 let scramEggs = new Recipie("Scrambled Eggs",["Eggs","Ham","Cheese"],"<i id = typeTitle>Breakfast</i>");
@@ -118,7 +118,6 @@ function searchRec() {
 
 }
 
-
 // adds recipie to list DEFUNCT UNTIL DATABASE
 function addRec() {
 
@@ -132,9 +131,6 @@ function addRec() {
     
     displayAllRec();
    
-
-
-
 }
 
 // Adds ingredients to shopping list and meal to meal list

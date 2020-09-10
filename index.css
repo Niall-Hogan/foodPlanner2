@@ -123,7 +123,9 @@
 
         #typeTitle
         {
+            margin-top:0;
             margin-bottom:30px;
+            font-size: 14px;
         }
 
          ul.ingss {
@@ -132,14 +134,9 @@
             font-size: 14px;
             color:white;
             position: relative;
-            top:-10px;
-            columns:2;
-            max-height:200px;
         }
 
-        
-
-      
+  
         .lTitle,
         p,h4 {
             font-family: 'Open Sans', sans-serif;;
@@ -148,25 +145,29 @@
        
         }
 
+        #rTitle
+        {
+            margin-bottom:5px;
+        }
+
         #desct
         {
             text-align: left;
             margin:0;
             position: relative;
-            top:-30px;
+            top:-10px;
             left:-20px;
         }
 
         #howToCook 
         {
             width:400px;
-            height:100px;
+            height:auto;
             margin:auto;
-            font-size:13px;
-            text-align: center;
+            font-size:14px;
+            text-align: left;
         }
 
-  
 
         .rightBar {
 
@@ -201,7 +202,7 @@
             padding: 10px;
         }
 
-        #formLbl1, #formLbl2
+        #formLbl2
         {
             font-family: Verdana,sans-serif;
             font-size:12px;

@@ -188,6 +188,7 @@ function addIngredient()
     var ing = document.getElementById("ownedIng").value;
 
     shoppingList.push(ing);
+    shoppingList.sort();
 
     checkDuplicate();
     printLists();

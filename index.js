@@ -18,7 +18,7 @@ class Recipie {
 
 
 // Object creation - passed name and ingredients
-let spagBol = new Recipie("Spaghetti Bolognaise", ["Pasta", "Chopped Tomatoes", "Mince","Onion","Garlic"],"<i id = typeTitle>Dinner</i>" ,["1. Fry chopped tomatoes, onion and garlic with mince \n 2. Boil Pasta \n 3. Add cheese"]);
+let spagBol = new Recipie("Spaghetti Bolognaise", ["Pasta", "Chopped Tomatoes", "Mince","Onion","Garlic"],"<i id = typeTitle>Dinner</i>" ,["1. Fry chopped tomatoes, onion and garlic with mince <br> 2. Boil Pasta <br> 3. Add cheese"]);
 let roastDinner = new Recipie("Roast Dinner", ["Sausage", "Gravy", "Potatoes", "Yorshire Pudidngs", "Frozen Veg"],"<i id = typeTitle>Dinner</i>",);
 let baconEgg = new Recipie("Bacon and Egg",["Bacon","Eggs","Bread"],"<i id = typeTitle>Breakfast</i>");
 let baconBrie = new Recipie("Bacon and Brie",["Bacon", "Brie", "Eggs"],"<i id = typeTitle>Lunch</i>");

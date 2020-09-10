@@ -1,3 +1,18 @@
+        .titleBar 
+        {
+            width:450px;
+            height:70px;
+            border:solid black 2px;
+            margin:auto;
+            font-family: Verdana,sans-serif;
+            color: white;
+            text-align: center;
+            background-color: #1c80c0;
+            margin-bottom:10px;
+          
+            
+        }
+
 
         .container {
             width: 900px;
@@ -51,11 +66,7 @@
         
                 }
 
-                #allBtns:hover
-                {
-                    transition:ease-in, .8s;
-                    background-color: black;
-                }
+               
 
         .divider {
             width: auto;
@@ -91,16 +102,23 @@
             }
 
 
-        .mainBar {
-            width: 70%;
-                     
-        }
+       
 
         .title {
             width: 100%;
-            height: 90%;
+            height: 100px;
             background: #6b9fdd;
-            text-align: left;
+            padding-top:10px;
+        }
+
+        .mainBar
+        {
+            border-top: black solid 2px;
+            border-bottom: black solid 2px;
+            margin: auto;
+            height:90%;
+            width:600px;
+            background: #6b9fdd;
         }
 
         #typeTitle
@@ -115,18 +133,13 @@
             color:white;
             position: relative;
             top:-10px;
-            columns: 1;
+            columns:2;
             max-height:200px;
         }
 
-        li.ings
-        {
-            text-align: left;
-        }
         
-      
 
-        
+      
         .lTitle,
         p,h4 {
             font-family: 'Open Sans', sans-serif;;
@@ -148,11 +161,9 @@
         {
             width:400px;
             height:100px;
-            margin-top:40px;
-            margin-left: 40px;
+            margin:auto;
             font-size:13px;
             text-align: center;
-            padding:5px;
         }
 
   

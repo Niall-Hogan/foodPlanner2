@@ -25,10 +25,10 @@ let baconBrie = new Recipie("Bacon and Brie Sandwich",["Bacon", "Brie","Bread", 
 let burrito = new Recipie("Burrito",["Wraps","Rice","Mince","Cheese","Lettuce","Jalapenos","Nachos"],"<i id = typeTitle>Dinner</i>","1. Fry mince, adding desired spices <br> 2. Boil rice, drain and add spices <br> 3. Dice lettuce and jalapenos <br> 4. Heat wraps for 10 seconds each side <br> 5. Roll burritos, serve with nachos and add cheese");
 let eggsAvo = new Recipie("Eggs Avocado Toast",["Eggs","Avocado","Bread"],"<i id = typeTitle>Breakfast</i>", "1. Fry eggs <br> 2. Peel and slice avocado <br> 3. Toasts bread and butter <br> 4. Serve"); 
 let scramEggs = new Recipie("Scrambled Eggs",["Eggs","Ham","Cheese"],"<i id = typeTitle>Breakfast</i>", "1. Crack eggs into pan, allow 1 minute cooking before scrambling <br> 2. Slice ham and add to eggs <br> 3. Serve with grated cheese");
-let carbonara = new Recipie("Carbonara",["Pasta","Bacon","Onion","Garlic", "Eggs"],"<i id = typeTitle> Dinner</i>", "1. Fry bacon, dice and put to one side <br> 2. Boil pasta <br> 3. Fry diced onion and garlic <br> 4.Drain pasta, add bacon,onion and garlic to saucepan <br> 5. Place on low heat, crack eggs in and stir ");
-let hamCheese = new Recipie("Ham Cheese Sandwich",["Ham","Cheese","Bread"],"<i id = typeTitle>Lunch</i>", "1.Toast and butter bread <br> 2. Add cheese and ham <br> 3. Place in pan to melt cheese");
+let carbonara = new Recipie("Carbonara",["Pasta","Bacon","Onion","Garlic", "Eggs"],"<i id = typeTitle> Dinner</i>", "1. Fry bacon, dice and put to one side <br> 2. Boil pasta <br> 3. Fry diced onion and garlic <br> 4. Drain pasta, add bacon,onion and garlic to saucepan <br> 5. Place on low heat, crack eggs in and stir ");
+let hamCheese = new Recipie("Ham Cheese Sandwich",["Ham","Cheese","Bread"],"<i id = typeTitle>Lunch</i>", "1. Toast and butter bread <br> 2. Add cheese and ham <br> 3. Place in pan to melt cheese");
 let jacketPot = new Recipie("Jacket Potato",["Jacket Potoates", "Tuna","Cheese","Butter"],"<i id = typeTitle>Lunch</i>", "1. Half potato and place in oven <br> 2. Mix tuna with mayo <br> 3. Remove potoatoes, spread with butter <br> 4. Add tuna and cheese");
-let stirFry = new Recipie("Stir fry noodles",["Egg Noodles", "Frozen Veg","Chicken","Soy Sauce", "Vinegar","Sugar","Sriracha","Eggs"],"<i id = typeTitle>Dinner</i>");
+let stirFry = new Recipie("Stir fry noodles",["Egg Noodles", "Frozen Veg","Chicken","Soy Sauce", "Vinegar","Sugar","Sriracha","Eggs"],"<i id = typeTitle>Dinner</i>", "1. Mix soy sauce,vinegar, sriracha, water and sugar to taste <br> 2. Fry chicken <br> 3. Add frozen veg and sauce to chicken <br> 4. Boil noodles and add to pan <br> 5. Add eggs, stir fry and serve");
 
 listOfRec.push(baconBrie,baconEgg,burrito,carbonara,eggsAvo,hamCheese,jacketPot,roastDinner,scramEggs,stirFry,spagBol);
 
@@ -43,7 +43,8 @@ function printRec(x) {
     var text2 = "";
     var text3 = x.method;
     var text4 = x.type;
-    var text5 = "<h4 id = desct ><br><br>Method:</h4>"
+    var text5 = "<h4 id = desct ><br><br>Method:</h4>";
+    var text6 = "<br><hr class = line>";
     
     
     for (i = 0; i < 1;i++)
@@ -58,10 +59,10 @@ function printRec(x) {
     }
     
     document.getElementById("rTitle").innerHTML = text1;
-    document.getElementById("typeTitle").innerHTML = text4;
+    document.getElementById("typeTitle").innerHTML =text4;
 
-    document.getElementById("ing").innerHTML = text2;
-    document.getElementById("howToCook").innerHTML = text5 + text3;
+    document.getElementById("ing").innerHTML =text2;
+    document.getElementById("howToCook").innerHTML =  text6 + text5 + text3;
    
 
 }
@@ -119,7 +120,7 @@ function searchRec() {
 
 }
 
-// adds recipie to list DEFUNCT UNTIL DATABASE
+// adds recipe to list DEFUNCT UNTIL DATABASE
 function addRec() {
 
     var rName = document.getElementById("newRecName").value;
@@ -162,7 +163,7 @@ function addShopping()
 
 
 // removes ingredient already owned from shopping list
-function ownedIngredient()
+function removeIngredient()
 {
 
     var ing = document.getElementById("ownedIng").value;
@@ -178,6 +179,18 @@ function ownedIngredient()
     }
     printLists();
 
+
+}
+
+function addIngredient()
+{
+
+    var ing = document.getElementById("ownedIng").value;
+
+    shoppingList.push(ing);
+
+    checkDuplicate();
+    printLists();
 
 }
 

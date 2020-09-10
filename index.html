@@ -15,7 +15,7 @@
 <body onload="displayAllRec()">
 
     <div class = "titleBar"> 
-        <h2>Shopping List Maker</h2>  </div>
+        <h2 class = "lTitle">Shopping List Maker</h2></div>
 
     <div class="container">
 
@@ -40,13 +40,14 @@
             </div>
 
             <div class="divider">
-                <h4 class="lTitle"> Already owned ingredient</h4>
+                <h4 class="lTitle"> Add / Remove ingredient</h4>
 
                
                 <label id="formLbl2">Ingredient</label>
                 <input type="text" id="ownedIng">
 
-                <button id="allBtns" onclick="ownedIngredient()">Add </button>
+                <button id="allBtns" onclick="removeIngredient()">Remove</button>
+                <button id="allBtns" onclick="addIngredient()">Add </button>
 
             </div>
 

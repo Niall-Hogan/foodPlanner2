@@ -48,6 +48,7 @@
                     position: relative;
                     padding:8px;
                     top:10px;
+                    margin-bottom:10px;
                     width:180px;
                     background-color: transparent;
                     font-family: Verdana,sans-serif;
@@ -134,6 +135,7 @@
             font-size: 14px;
             color:white;
             position: relative;
+            margin-bottom: 20px;;
         }
 
   
@@ -219,4 +221,10 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
-}
+
+        }
+        
+        hr.line 
+        {
+            border: dashed 1px white;
+        }

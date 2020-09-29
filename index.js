@@ -19,9 +19,9 @@ class Recipie {
 
 // Object creation - passed name and ingredients
 let spagBol = new Recipie("Spaghetti Bolognaise", ["Pasta", "Chopped Tomatoes", "Mince","Onion","Garlic"],"<i id = typeTitle>Dinner</i>" ,"1. Fry onion and garlic with mince <br> 2. Boil pasta <br> 3. Add chopped tomatoes to mince until sauce is reduced <br> 4. Mix sauce and pasta <br> 5. Add cheese");
-let roastDinner = new Recipie("Roast Dinner", ["Sausage", "Gravy", "Potatoes", "Yorshire Puddings", "Frozen Veg"],"<i id = typeTitle>Dinner</i>", "1. Peel potatoes and boil for 3 minutes, remove and place on baking tray <br> 2. Add oil and flower, place in oven for 20 mins, use water for gravy <br> 3. Fry sausages, when nearly done add frozen veg to pan <br> 4. Put yorkshires in the oven 5");
+let roastDinner = new Recipie("Roast Dinner", ["Sausage", "Gravy", "Potatoes", "Yorkshire Puddings", "Frozen Veg"],"<i id = typeTitle>Dinner</i>", "1. Peel potatoes and boil for 3 minutes, remove and place on baking tray <br> 2. Add oil and flower, place in oven for 20 mins, use water for gravy <br> 3. Fry sausages, when nearly done add frozen veg to pan <br> 4. Put yorkshires in the oven <br> 5. Serve");
 let baconEgg = new Recipie("Bacon and Egg Sandwich",["Bacon","Eggs","Bread"],"<i id = typeTitle>Breakfast</i>", "1. Fry bacon until crispy <br> 2. Lower heat and fry eggs <br> 3. Toast bread and then butter <br> 4. Assemble sandwich ");
-let baconBrie = new Recipie("Bacon and Brie Sandwich",["Bacon", "Brie","Bread", "Eggs"],"<i id = typeTitle>Lunch</i>","1. Fry bacon until crispy <br> 2. Slice brie <br> 3. Toast bread and then butter <br> 4. Assemble sandwich");
+let baconBrie = new Recipie("Bacon and Brie Sandwich",["Bacon", "Brie","Bread"],"<i id = typeTitle>Lunch</i>","1. Fry bacon until crispy <br> 2. Slice brie <br> 3. Toast bread and then butter <br> 4. Assemble sandwich");
 let burrito = new Recipie("Burrito",["Wraps","Rice","Mince","Cheese","Lettuce","Jalapenos","Nachos"],"<i id = typeTitle>Dinner</i>","1. Fry mince, adding desired spices <br> 2. Boil rice, drain and add spices <br> 3. Dice lettuce and jalapenos <br> 4. Heat wraps for 10 seconds each side <br> 5. Roll burritos, serve with nachos and add cheese");
 let eggsAvo = new Recipie("Eggs Avocado Toast",["Eggs","Avocado","Bread"],"<i id = typeTitle>Breakfast</i>", "1. Fry eggs <br> 2. Peel and slice avocado <br> 3. Toasts bread and butter <br> 4. Serve"); 
 let scramEggs = new Recipie("Scrambled Eggs",["Eggs","Ham","Cheese"],"<i id = typeTitle>Breakfast</i>", "1. Crack eggs into pan, allow 1 minute cooking before scrambling <br> 2. Slice ham and add to eggs <br> 3. Serve with grated cheese");
@@ -43,8 +43,8 @@ function printRec(x) {
     var text2 = "";
     var text3 = x.method;
     var text4 = x.type;
-    var text5 = "<h4 id = desct ><br><br>Method:</h4>";
-    var text6 = "<br><hr class = line>";
+    var text5 = "<h4 id = desct><br>Method:</h4>";
+    var text6 = "<hr class = line>";
     
     
     for (i = 0; i < 1;i++)
@@ -179,6 +179,8 @@ function removeIngredient()
     }
     printLists();
 
+   
+
 
 }
 
@@ -192,6 +194,8 @@ function addIngredient()
 
     checkDuplicate();
     printLists();
+    
+    
 
 }
 

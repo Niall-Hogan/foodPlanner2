@@ -6,6 +6,9 @@
 
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="index.js"></script>
@@ -15,7 +18,11 @@
 <body onload="displayAllRec()">
 
     <div class = "titleBar"> 
-        <h2 class = "lTitle">Shopping List Maker</h2></div>
+        <h2 class = "lTitle">Shopping List Maker</h2> 
+        
+        <h4 class = "rTitle"><i>Written in HTML5, CSS3 and JS By Niall Hogan</i></h4>
+    
+    </div>
 
     <div class="container">
 
@@ -26,7 +33,7 @@
 
                 <h4 class ="lTitle"> Search Recipes</h4>
 
-                <input type="text" id="search">
+                <input type="text" id="search" placeholder="I'm hungry for...">
 
                 <button id="searchBtn" onclick="searchRec()">Search</button>
             </div>
@@ -39,16 +46,13 @@
 
             </div>
 
+      
             <div class="divider">
-                <h4 class="lTitle"> Add / Remove ingredient</h4>
 
-               
-                <label id="formLbl2">Ingredient</label>
-                <input type="text" id="ownedIng">
-
-                <button id="allBtns" onclick="removeIngredient()">Remove</button>
-                <button id="allBtns" onclick="addIngredient()">Add </button>
-
+                <h4 class="lTitle " id= "allRecTitle">Chosen Meals</h4>
+        
+                <textarea id="Meals"></textarea>
+        
             </div>
 
 
@@ -90,10 +94,14 @@
     </div>
 
     <div class="divider">
+        <h4 class="lTitle"> Add / Remove ingredient</h4>
 
-        <h4 class="lTitle " id= "allRecTitle">Chosen Meals</h4>
+       
+        <label id="formLbl2">Ingredient</label>
+        <input type="text" id="ownedIng">
 
-        <textarea id="Meals"></textarea>
+        <button id="allBtns" onclick="removeIngredient()">Remove</button>
+        <button id="allBtns" onclick="addIngredient()">Add </button>
 
     </div>
 </div>
